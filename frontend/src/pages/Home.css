@@ -1,0 +1,159 @@
+.home-wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.home-header {
+  width: 100%;
+  max-width: 720px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.home-logo {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.home-logo span {
+  color: var(--accent);
+}
+
+.btn-trocar {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 0.82rem;
+  color: var(--ink2);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.btn-trocar:hover {
+  background: var(--surface2);
+  color: var(--ink);
+}
+
+.home-turma-banner {
+  width: 100%;
+  max-width: 720px;
+  background: var(--accent-light);
+  border: 1px solid #B7E4C7;
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin-bottom: 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.home-turma-banner-icon {
+  font-size: 22px;
+}
+
+.home-turma-banner-nome {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--accent);
+}
+
+.home-turma-banner-sub {
+  font-size: 0.78rem;
+  color: var(--accent);
+  opacity: 0.75;
+}
+
+.home-turma-badge {
+  margin-left: auto;
+  font-size: 0.72rem;
+  background: var(--accent);
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.home-greeting {
+  width: 100%;
+  max-width: 720px;
+  margin-bottom: 1.5rem;
+}
+
+.home-greeting h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.4rem, 4vw, 1.9rem);
+  line-height: 1.2;
+  margin-bottom: 0.3rem;
+  color: var(--ink);
+}
+
+.home-greeting h1 span {
+  color: var(--accent);
+}
+
+.home-greeting p {
+  color: var(--ink2);
+  font-size: 0.88rem;
+}
+
+.home-cards {
+  width: 100%;
+  max-width: 720px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 1rem;
+}
+
+.home-card {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.4rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.home-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.home-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.home-card-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.home-card-desc {
+  font-size: 0.8rem;
+  color: var(--ink2);
+  line-height: 1.5;
+}
+
+.home-card-link {
+  font-size: 0.78rem;
+  font-weight: 500;
+  margin-top: auto;
+}

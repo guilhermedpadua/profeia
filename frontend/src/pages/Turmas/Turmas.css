@@ -1,0 +1,144 @@
+.turmas-wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.turmas-header {
+  width: 100%;
+  max-width: 680px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.turmas-logo {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.turmas-logo span {
+  color: var(--accent);
+}
+
+.turmas-greeting {
+  width: 100%;
+  max-width: 680px;
+  margin-bottom: 2rem;
+}
+
+.turmas-greeting h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 0.4rem;
+}
+
+.turmas-greeting p {
+  color: var(--ink2);
+  font-size: 0.9rem;
+}
+
+.turmas-grid {
+  width: 100%;
+  max-width: 680px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.turma-card {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.turma-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.turma-card-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.turma-card-sub {
+  font-size: 0.82rem;
+  color: var(--ink2);
+}
+
+.turma-tag {
+  display: inline-block;
+  background: var(--accent-light);
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 999px;
+  margin-top: 0.25rem;
+  width: fit-content;
+}
+
+.btn-nova {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem 1.75rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-nova:hover {
+  background: #245c43;
+  transform: translateY(-1px);
+}
+
+.turmas-empty {
+  width: 100%;
+  max-width: 680px;
+  background: var(--surface);
+  border: 1.5px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.turmas-empty-icon {
+  font-size: 3rem;
+}
+
+.turmas-empty h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.2rem;
+  color: var(--ink);
+}
+
+.turmas-empty p {
+  color: var(--ink2);
+  font-size: 0.88rem;
+  max-width: 340px;
+  line-height: 1.6;
+}
