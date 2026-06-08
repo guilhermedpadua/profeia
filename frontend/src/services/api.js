@@ -1,6 +1,6 @@
 // URL do backend — em desenvolvimento aponta pra localhost
 // Em produção, troca pela URL do Vercel
-const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3001";
+const BASE_URL = import.meta.env.VITE_API_URL || "https://profeia-backend.onrender.com";
 
 export async function gerarMaterial({ tipo, turma, dados }) {
   const response = await fetch(`${BASE_URL}/api/gerar`, {
